@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Incredible India</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      background-color: #e3f2fd;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h2, h3 {
+      color: #1565c0;
+      border-bottom: 2px solid #1e88e5;
+      padding-bottom: 5px;
+    }
+
+    form {
+      background-color: #ffffff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+      color: #0d47a1;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="time"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #90caf9;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 5px;
+      background-color: #e3f2fd;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    fieldset {
+      border: 1px solid #64b5f6;
+      padding: 10px;
+      border-radius: 4px;
+      margin: 10px 0;
+      background-color: #bbdefb;
+    }
+
+    legend {
+      padding: 0 5px;
+      font-size: 0.9em;
+      color: #0d47a1;
+      font-weight: bold;
+    }
+
+    input[type="file"] {
+      padding: 5px 0;
+    }
+
+    .form-actions {
+      margin: 20px 0;
+      display: flex;
+      gap: 10px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background 0.3s;
+    }
+
+    input[type="submit"] {
+      background-color: #43a047;
+      color: white;
+    }
+
+    input[type="reset"] {
+      background-color: #d32f2f;
+      color: white;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #2e7d32;
+    }
+
+    input[type="reset"]:hover {
+      background-color: #b71c1c;
+    }
+
+    .navigation {
+      margin: 20px 0;
+    }
+
+    a {
+      color: #1e88e5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    textarea {
+      height: 100px;
+      resize: vertical;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 4px;
+    }
+
+    footer {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+      text-align: center;
+      background-color: #bbdefb;
+      padding: 10px;
+      border-radius: 4px;
+    }
+
+    footer p {
+      color: #0d47a1;
+      font-size: 0.9em;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <h2>Contact Us</h2>
+  <p>Please fill out the form below for any inquiries or to register as a student.</p>
+
+  <h3>Student Registration Form</h3>
+
+  <form>
+    <div class="form-group">
+      <label for="fullname">Full name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+    </div>
+
+    <div class="form-group">
+      <fieldset>
+        <legend>Gender:</legend>
+        <label>
+          <input type="radio" name="gender" value="male" checked> Male
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female"> Female
+        </label>
+      </fieldset>
+    </div>
+
+    <div class="form-group">
+      <label>
+        <input type="checkbox" name="newsletter"> Subscribe to newsletter
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label for="state">State:</label>
+      <select id="state" name="state">
+        <option value="Gujarat">Gujarat</option>
+        <option value="UP">Uttar Pradesh</option>
+        <option value="Maharashtra">Maharashtra</option>
+      </select>
+    </div>
+
+    <div class="form-actions">
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+
+  <iframe src="https://ojas.gujarat.gov.in/AdvtList.aspx?type=lCxUjNjnTp8=" title="Government Portal"></iframe>
+
+  <div class="navigation">
+    <a href="home.html">Back to Home</a>
+  </div>
+
+  <footer>
+    <p><em>Contact us at info@incredibleindia.com</em></p>
+    <p>&copy; 2025 Incredible Project</p>
+  </footer>
+</body>
+</html>
