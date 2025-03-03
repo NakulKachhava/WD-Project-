@@ -1,167 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Famous Landmarks in India</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #e6f0f8;
-            color: #222;
-            margin: 0;
-            padding: 20px;
-            text-align: center;
-        }
-
-        h2, h3, h4 {
-            color: white;
-            background-color: #4973a4;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        p {
-            background-color: #cfe0eb;
-            padding: 10px;
-            border-radius: 5px;
-            display: inline-block;
-            max-width: 800px;
-            text-align: justify;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-            background: #385d8a;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        ul li {
-            display: inline;
-            margin: 10px;
-            font-size: 18px;
-            background: #2b4a75;
-            padding: 8px 12px;
-            border-radius: 5px;
-            color: white;
-        }
-
-        ul a {
-            text-decoration: none;
-        }
-
-        ul a:hover li {
-            background: #1e3655;
-        }
-
-        img {
-            display: block;
-            margin: 20px auto;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        img:hover {
-            transform: scale(1.07);
-        }
-
-        table {
-            width: 90%;
-            border-collapse: collapse;
-            margin: 20px auto;
-        }
-
-        table, th, td {
-            border: 1px solid #1e3655;
-            padding: 8px;
-            text-align: center;
-        }
-
-        th {
-            background-color: #385d8a;
-            color: white;
-        }
-
-        footer {
-            margin-top: 30px;
-            padding: 20px;
-            background-color: #cfe0eb;
-            border-radius: 5px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Famous Landmarks in India</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6f0f8;
+      color: #222;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    h2, h3, h4 {
+      color: white;
+      background-color: #4973a4;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    p {
+      background-color: #cfe0eb;
+      padding: 10px;
+      border-radius: 5px;
+      display: inline-block;
+      max-width: 800px;
+      text-align: justify;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      background: #385d8a;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    ul a li {
+      display: inline;
+      margin: 10px;
+      font-size: 18px;
+      background: #2b4a75;
+      padding: 8px 12px;
+      border-radius: 5px;
+      color: white;
+    }
+    ul li {
+      margin: 10px;
+      font-size: 18px;
+      padding: 6px 10px;
+      color: white;
+    }
+    ul a {
+      text-decoration: none;
+    }
+    ul a:hover li {
+      background: #1e3655;
+    }
+    img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease-in-out;
+    }
+    img:hover {
+      transform: scale(1.07);
+    }
+    table {
+      width: 90%;
+      border-collapse: collapse;
+      margin: 20px auto;
+    }
+    table, th, td {
+      border: 1px solid #1e3655;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #385d8a;
+      color: white;
+    }
+    footer {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #cfe0eb;
+      border-radius: 5px;
+    }
+    @media (max-width: 576px) {
+      body {
+        padding: 10px;
+        background-color: #e0f7fa;
+      }
+      h2, h3, h4 {
+        font-size: 1.5em;
+        padding: 8px;
+        background-color: #0288d1;
+      }
+      p {
+        font-size: 1em;
+        padding: 8px;
+        background-color: #b2ebf2;
+      }
+      ul {
+        padding: 5px;
+        background-color: #4fc3f7;
+      }
+      ul a li {
+        display: block;
+        margin: 5px auto;
+        font-size: 1em;
+        padding: 8px 0;
+        background-color: #03a9f4;
+      }
+      ul a:hover li {
+        background-color: #0277bd;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        margin: 10px auto;
+      }
+      table, th, td {
+        font-size: 0.9em;
+        padding: 6px;
+      }
+      th {
+        background-color: #0288d1;
+      }
+      footer {
+        font-size: 0.9em;
+        padding: 10px;
+        background-color: #b2ebf2;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h2>Famous Landmarks in India</h2>
-    <ul>
-        <a href="home.html"><li>Home</li></a>
-        <a href="culture.html"><li>Culture</li></a>
-        <a href="landmarks.html"><li>Landmarks</li></a>
-        <a href="cuisine.html"><li>Cuisine</li></a>
-        <a href="contactus.html"><li>Contact Us</li></a>
-    </ul>
-    <p>Explore the iconic landmarks that define the heritage and history of India.</p>
-    <h3>Iconic Monuments</h3>
-    <p>India is home to some of the most awe-inspiring landmarks in the world. These monuments reflect its rich cultural heritage and historical significance:</p>
-    <ul>
-        <li><b>Taj Mahal:</b> Located in Agra, this symbol of eternal love is one of the <mark>Seven Wonders of the World</mark>.</li>
-        <li><b>Red Fort:</b> A UNESCO World Heritage Site in Delhi, showcasing Mughal architecture.</li>
-        <li><b>Hawa Mahal:</b> Known as the "Palace of Winds," this Jaipur marvel is famous for its intricate latticework.</li>
-        <li><b>Charminar:</b> An iconic mosque in Hyderabad and a masterpiece of Indo-Islamic architecture.</li>
-    </ul>
-    <img src="./redfort.jpg" alt="Red Fort" height="400px" width="600px">
-    <p>The majestic Red Fort, Delhi</p>
-    <h3>Indian States and Capitals</h3>
-    <p>India is a union of states, each with its unique cultural and geographical identity. Here's a detailed table listing some Indian states, their capitals, and key data:</p>
-    <h4>List of Indian States</h4>
-    <table>
-        <tr>
-            <th rowspan="2">State</th>
-            <th rowspan="2">Capital</th>
-            <th colspan="2">Area (in Km<sup>2</sup>)</th>
-            <th rowspan="2">Official Language</th>
-        </tr>
-        <tr>
-            <th>Urban</th>
-            <th>Rural</th>        
-        </tr>
-        <tr>
-            <td>Gujarat</td>
-            <td>Gandhinagar</td>
-            <td>1,764</td>
-            <td>185,933</td>
-            <td>Gujarati</td>
-        </tr>
-        <tr>
-            <td>Maharashtra</td>
-            <td>Mumbai</td>
-            <td>307,713</td>
-            <td>70,940</td>
-            <td>Marathi</td>
-        </tr>
-        <tr>
-            <td>Rajasthan</td>
-            <td>Jaipur</td>
-            <td>342,239</td>
-            <td>NA</td>
-            <td>Hindi</td>
-        </tr>
-        <tr>
-            <td colspan="5">Note: Data is indicative and may not represent official values.</td>
-        </tr>
-    </table>
-    <h3>Fun Fact</h3>
-    <p>Did you know? India has the largest postal network in the world, with over 150,000 post offices, including one located on a floating structure in Dal Lake, Srinagar.</p>
-    <img src="./dal_lake.jpg" alt="Dal Lake" height="400px" width="600px">
-    <p>The floating post office in Dal Lake, Srinagar</p>
-    <a href="home.html">
-        <p>&#x2190 Back to Home</p>
-    </a>
-    <footer>
-        <p><i>Contact us at info@incredibleindia.com</i></p>
-        <p>&copy; 2025 Incredible India Project</p>
-    </footer>
+  <h2>Famous Landmarks in India</h2>
+  <ul>
+    <a href="home.html"><li>Home</li></a>
+    <a href="culture.html"><li>Culture</li></a>
+    <a href="landmarks.html"><li>Landmarks</li></a>
+    <a href="cuisine.html"><li>Cuisine</li></a>
+    <a href="contactus.html"><li>Contact Us</li></a>
+  </ul>
+  <p>Explore the iconic landmarks that define the heritage and history of India.</p>
+  <h3>Iconic Monuments</h3>
+  <p>India is home to some of the most awe-inspiring landmarks in the world. These monuments reflect its rich cultural heritage and historical significance:</p>
+  <ul>
+    <li><b>Taj Mahal:</b> Located in Agra, this symbol of eternal love is one of the <mark>Seven Wonders of the World</mark>.</li>
+    <li><b>Red Fort:</b> A UNESCO World Heritage Site in Delhi, showcasing Mughal architecture.</li>
+    <li><b>Hawa Mahal:</b> Known as the "Palace of Winds," this Jaipur marvel is famous for its intricate latticework.</li>
+    <li><b>Charminar:</b> An iconic mosque in Hyderabad and a masterpiece of Indo-Islamic architecture.</li>
+  </ul>
+  <img src="./redfort.jpg" alt="Red Fort" height="400px" width="600px">
+  <p>The majestic Red Fort, Delhi</p>
+  <h3>Indian States and Capitals</h3>
+  <p>India is a union of states, each with its unique cultural and geographical identity. Here's a detailed table listing some Indian states, their capitals, and key data:</p>
+  <h4>List of Indian States</h4>
+  <table>
+    <tr>
+      <th rowspan="2">State</th>
+      <th rowspan="2">Capital</th>
+      <th colspan="2">Area (in Km<sup>2</sup>)</th>
+      <th rowspan="2">Official Language</th>
+    </tr>
+    <tr>
+      <th>Urban</th>
+      <th>Rural</th>
+    </tr>
+    <tr>
+      <td>Gujarat</td>
+      <td>Gandhinagar</td>
+      <td>1,764</td>
+      <td>185,933</td>
+      <td>Gujarati</td>
+    </tr>
+    <tr>
+      <td>Maharashtra</td>
+      <td>Mumbai</td>
+      <td>307,713</td>
+      <td>70,940</td>
+      <td>Marathi</td>
+    </tr>
+    <tr>
+      <td>Rajasthan</td>
+      <td>Jaipur</td>
+      <td>342,239</td>
+      <td>NA</td>
+      <td>Hindi</td>
+    </tr>
+    <tr>
+      <td colspan="5">Note: Data is indicative and may not represent official values.</td>
+    </tr>
+  </table>
+  <h3>Fun Fact</h3>
+  <p>Did you know? India has the largest postal network in the world, with over 150,000 post offices, including one located on a floating structure in Dal Lake, Srinagar.</p>
+  <img src="./dal_lake.jpg" alt="Dal Lake" height="400px" width="600px">
+  <p>The floating post office in Dal Lake, Srinagar</p>
+  <a href="home.html">
+    <p>&#x2190; Back to Home</p>
+  </a>
+  <footer>
+    <p><i>Contact us at info@incredibleindia.com</i></p>
+    <p>&copy; 2025 Incredible India Project</p>
+  </footer>
 </body>
 </html>
