@@ -20,6 +20,7 @@
       background-color: #e74c3c;
       padding: 10px;
       border-radius: 5px;
+      animation: fadeInUp 1s ease-out, colorPulse 3s ease-in-out infinite;
     }
     h1 mark {
       background-color: #ffcc00;
@@ -32,6 +33,7 @@
       background-color: #d5dbdb;
       padding: 10px;
       border-radius: 5px;
+      animation: fadeInUp 1s ease-out;
     }
     ul {
       list-style-type: none;
@@ -40,6 +42,7 @@
       background: #3498db;
       padding: 10px;
       border-radius: 5px;
+      animation: fadeInUp 1s ease-out;
     }
     ul li {
       display: inline;
@@ -62,6 +65,7 @@
       border-radius: 10px;
       box-shadow: 0 5px 20px rgba(231, 76, 60, 0.7);
       transition: transform 0.3s ease-in-out;
+      animation: fadeInUp 1s ease-out;
     }
     img:hover {
       transform: scale(1.07);
@@ -79,6 +83,7 @@
       background-color: #d5dbdb;
       padding: 10px;
       border-radius: 5px;
+      animation: fadeInUp 1s ease-out;
     }
     .back-link {
       display: block;
@@ -88,9 +93,25 @@
       color: #16a085;
       text-decoration: none;
       font-weight: bold;
+      animation: fadeInUp 1s ease-out;
     }
     .back-link:hover {
       text-decoration: underline;
+    }
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes colorPulse {
+      0% { background-color: #e74c3c; }
+      50% { background-color: #ff7043; }
+      100% { background-color: #e74c3c; }
     }
     @media (max-width: 576px) {
       body {
@@ -102,6 +123,7 @@
         font-size: 1.5em;
         padding: 8px;
         background-color: #fb8c00;
+        animation: fadeInUp 1s ease-out, colorPulse 3s ease-in-out infinite;
       }
       h1 mark {
         background-color: #fdd835;
@@ -110,10 +132,12 @@
         font-size: 1em;
         padding: 8px;
         background-color: #ffe0b2;
+        animation: fadeInUp 1s ease-out;
       }
       ul {
         padding: 5px;
         background-color: #ffb74d;
+        animation: fadeInUp 1s ease-out;
       }
       ul li {
         display: block;
@@ -129,15 +153,18 @@
         width: 100%;
         height: auto;
         margin: 10px 0;
+        animation: fadeInUp 1s ease-out;
       }
       .back-link {
         font-size: 1em;
         margin-top: 10px;
+        animation: fadeInUp 1s ease-out;
       }
       footer {
         font-size: 0.9em;
         padding: 10px;
         background-color: #ffe0b2;
+        animation: fadeInUp 1s ease-out;
       }
     }
   </style>

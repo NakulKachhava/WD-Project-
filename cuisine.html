@@ -12,6 +12,7 @@
       margin: 0;
       padding: 20px;
       text-align: center;
+      animation: fadeInUp 1s ease-out;
     }
     h2, h3 {
       color: #ffffff;
@@ -19,6 +20,7 @@
       padding: 14px;
       border-radius: 10px;
       font-weight: bold;
+      animation: fadeInUp 1s ease-out, colorPulse 3s ease-in-out infinite;
     }
     p {
       background-color: #d4e7c5;
@@ -27,6 +29,7 @@
       display: inline-block;
       max-width: 800px;
       text-align: justify;
+      animation: fadeInUp 1s ease-out;
     }
     ul {
       list-style-type: none;
@@ -34,6 +37,7 @@
       background: #79a479;
       padding: 14px;
       border-radius: 10px;
+      animation: fadeInUp 1s ease-out;
     }
     ul a li {
       display: inline;
@@ -43,12 +47,13 @@
       padding: 12px 16px;
       border-radius: 10px;
       color: white;
+      transition: background 0.3s;
     }
     ul li {
       margin: 5px;
       font-size: 18px;
       padding: 6px 10px;
-      color: blake;
+      color: black;
     }
     ul a {
       text-decoration: none;
@@ -62,6 +67,7 @@
       border-radius: 15px;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
       transition: transform 0.3s ease-in-out;
+      animation: fadeInUp 1s ease-out;
     }
     img:hover {
       transform: scale(1.06);
@@ -69,6 +75,35 @@
     footer {
       background-color: #d4e7c5;
       border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      color: #2e4a27;
+      animation: fadeInUp 1s ease-out;
+    }
+    a p {
+      font-weight: bold;
+      font-size: 18px;
+      color: #2e4a27;
+      text-decoration: none;
+      animation: fadeInUp 1s ease-out;
+    }
+    a p:hover {
+      text-decoration: underline;
+    }
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes colorPulse {
+      0% { background-color: #4a8c4e; }
+      50% { background-color: #66bb6a; }
+      100% { background-color: #4a8c4e; }
     }
     @media (max-width: 576px) {
       body {
@@ -79,6 +114,7 @@
         font-size: 1.5em;
         padding: 10px;
         background-color: #aed581;
+        animation: fadeInUp 1s ease-out, colorPulse 3s ease-in-out infinite;
       }
       p {
         font-size: 1em;

@@ -20,6 +20,7 @@
       background-color: #6c5b7b;
       padding: 10px;
       border-radius: 5px;
+      animation: fadeInUp 1s ease-out, colorPulse 3s ease-in-out infinite;
     }
     p {
       color: #2d3436;
@@ -27,6 +28,7 @@
       background-color: #dfe6e9;
       padding: 10px;
       border-radius: 5px;
+      animation: fadeInUp 1s ease-out;
     }
     ul {
       list-style-type: none;
@@ -35,6 +37,7 @@
       background: #574b90;
       padding: 10px;
       border-radius: 5px;
+      animation: fadeInUp 1s ease-out;
     }
     ul a li {
       display: inline;
@@ -62,6 +65,7 @@
       border-radius: 10px;
       box-shadow: 0 5px 15px rgba(108, 91, 123, 0.8);
       transition: transform 0.3s ease-in-out;
+      animation: fadeInUp 1s ease-out;
     }
     img:hover {
       transform: scale(1.07);
@@ -89,41 +93,61 @@
       background-color: #dfe6e9;
       padding: 10px;
       border-radius: 5px;
+      animation: fadeInUp 1s ease-out;
+    }
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes colorPulse {
+      0% { background-color: #6c5b7b; }
+      50% { background-color: #8a7aa3; }
+      100% { background-color: #6c5b7b; }
     }
     @media (max-width: 576px) {
       body {
         padding: 10px;
         max-width: 100%;
-        background-color: #e0eaff; /* soft light blue */
+        background-color: #e0eaff;
       }
       h1, h2 {
         font-size: 1.5em;
         padding: 8px;
-        background-color: #6a5acd; /* slate blue */
+        background-color: #6a5acd;
+        animation: fadeInUp 1s ease-out, colorPulse 3s ease-in-out infinite;
       }
       p {
         font-size: 1em;
         padding: 8px;
-        background-color: #dcd0ff; /* light lavender */
+        background-color: #dcd0ff;
+        animation: fadeInUp 1s ease-out;
       }
       ul {
         padding: 5px;
-        background-color: #a29bfe; /* soft purple */
+        background-color: #a29bfe;
+        animation: fadeInUp 1s ease-out;
       }
       ul a li {
         display: block;
         margin: 5px auto;
         font-size: 1em;
         padding: 8px 0;
-        background-color: #7f7fd5; /* blueish purple */
+        background-color: #7f7fd5;
       }
       ul a:hover li {
-        background-color: #6c5ac0; /* deeper slate purple */
+        background-color: #6c5ac0;
       }
       img {
         width: 100%;
         height: auto;
         margin: 10px 0;
+        animation: fadeInUp 1s ease-out;
       }
       table, th, td {
         font-size: 0.9em;
@@ -132,7 +156,8 @@
       footer {
         font-size: 0.9em;
         padding: 10px;
-        background-color: #dcd0ff; /* light lavender */
+        background-color: #dcd0ff;
+        animation: fadeInUp 1s ease-out;
       }
     }
   </style>
